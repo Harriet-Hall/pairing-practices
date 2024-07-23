@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pairing Practice</title>
+</head>
+<body>
+    <h1>Pairing Practices</h1>
+    <h2>Checklist</h2>
+    <label>
+        <input type="checkbox" name="Create file"/>
+        Create file
+    </label>
+    
+</body>
+
+<script>
+    const checkbox = document.querySelector("input[type=checkbox]")
+    const label = document.querySelector("label")
+
+    function checkline(){
+    
+    if (checkbox.checked==true){
+        label.style.textDecoration="line-through"
+        console.log("checked")
+    }
+    else{
+         label.style.textDecoration="none"
+    }
+} 
+checkbox.addEventListener("click", checkline)
+</script>
+</html>

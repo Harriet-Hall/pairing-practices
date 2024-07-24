@@ -1,9 +1,7 @@
 import axios from "axios"
 
-const bestPracticesAPIController = () => {
-    let response = axios.get("/best-practices")
-    
-    return response
+const bestPracticesAPIController = async () => {
+    return await axios.get("/best-practices")
 } 
 
 export default bestPracticesAPIController

@@ -1,9 +1,9 @@
 import axios from "axios"
 
 const bestPracticesAPIController = async () => {
-     axios.get("/best-practices").then((data) => {
-        return data.data
-    })
+    let response = await axios.get("/best-practices")
+    return response.data
+    
 
 } 
 

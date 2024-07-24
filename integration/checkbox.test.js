@@ -4,7 +4,7 @@ import bestPracticesAPIController from "../src/BestPracticesApiController";
 describe("test best practices API call", () => {
   
 
-  xit("calls mockAxios with endpoint", () => {
+  it("calls mockAxios with endpoint", () => {
     bestPracticesAPIController()
     expect(mockAxios.get).toHaveBeenCalledWith("/best-practices");
   });
@@ -15,6 +15,6 @@ describe("test best practices API call", () => {
       
       expect(mockAxios.get).toHaveBeenCalledWith("/best-practices");
       
-      expect(response).toBe(200);
+      expect(response.status).toBe(200);
   });
 });

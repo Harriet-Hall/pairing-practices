@@ -1,6 +1,6 @@
 import mockAxios from 'jest-mock-axios';
 
-mockAxios.get.mockResolvedValue({response:300})
+mockAxios.get.mockResolvedValue({status:200})
 // mockAxios.mockResponse({status: 300})
 
 

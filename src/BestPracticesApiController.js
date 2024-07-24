@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const bestPracticesAPIController = async () => {
-     axios.get().then((data) => {
+     axios.get("/best-practices").then((data) => {
         return data.data
     })
 
